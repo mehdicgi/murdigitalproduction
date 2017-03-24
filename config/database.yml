@@ -4,8 +4,10 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
+
 default: &default
   adapter: sqlite3
+  #cahngement sqlite3 to postgresql because is not supported by heroku [Mehdi 24/03/2017]
   pool: 5
   timeout: 5000
 
